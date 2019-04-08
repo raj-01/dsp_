@@ -1,0 +1,7 @@
+%% collect data from on / of files 
+clear;
+[y,Fs] = audioread("on_2.mp4");
+data = y(: ,1)'; 
+
+fbank_data = fopen('fbank.txt','w');
+fbank_data = fprintf(fbank_data,'%f\n' ,d );
